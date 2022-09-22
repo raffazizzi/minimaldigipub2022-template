@@ -1,54 +1,51 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# MITH301 / MITH 628C Project Template
 
-## 🚀 Quick start
+## Installation
 
-1.  **Create a Gatsby site.**
+Make sure you have NodeJS installed.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+With the project folder open in VS Code, access the terminal and type:
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+```js
+npm install
+```
 
-2.  **Start developing.**
+This will take a few minutes.
 
-    Navigate into your new site’s directory and start it up.
+## Development
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+To work on your site, run Gastby so that it will show changes as you make them.
 
-3.  **Open the code and start customizing!**
+With the project folder open in VS Code, access the terminal and type:
 
-    Your site is now running at http://localhost:8000!
+```js
+npm start
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+Then visit http://localhost:8080 in your browser.
 
-4.  **Learn more**
+## Deployment
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+To publish the website, commit and push changes to GitHub. This will trigger the build process on GitHub, which you can monitor form the repository page. If the build is successful, your project will be published at:
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+https://TECH_LEAD_USERNAME.github.io/PROJECT_NAME
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Troubleshooting
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+If the site is behaving unexpectedly, you can try to stop and restart Gastby. You can do this by accessing the terminal with Gatsby running and hitting Ctrl+C to stop Gatsby. Then start again (see Development above).
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+If you're still encountering issues, you can try and clean existing pre-generated data with the following command from the terminal:
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```js
+npm run clean
+```
 
-## 🚀 Quick start (Gatsby Cloud)
+## Local build (optional)
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+To have a look at how the built static site looks like you can also build the website locally. Note that this will not affect the site on GitHub.
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+With the project folder open in VS Code, access the terminal and type:
+
+```js
+npm run build
+```
