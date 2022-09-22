@@ -10,11 +10,12 @@ import {
   Note
 } from "gatsby-theme-ceteicean/src/components/DefaultBehaviors"
 
-import {Link} from "gatsby"
-
 import Paper from "@mui/material/Paper"
 import Layout from "../../components/layout"
 import Typography from "@mui/material/Typography"
+
+import "../../CETEIcean.css"
+import "../../style.css"
 
 export default function MicroEditionCeteicean({pageContext}) {
 
@@ -33,7 +34,7 @@ export default function MicroEditionCeteicean({pageContext}) {
         <Ceteicean pageContext={pageContext} routes={routes} />
         <Paper elevation={1} sx={{padding: '.7em 0 0 1em'}}>
           <Typography variant="body2">
-            <Link to={pageContext.publicURL} download>See original TEI.</Link>
+            <a href={pageContext.publicURL} download>See original TEI.</a>
           </Typography>
         </Paper>
     </Layout>
